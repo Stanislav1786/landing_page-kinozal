@@ -1,0 +1,66 @@
+.film-info {
+
+  .horizontal-line {
+    @extend %horizontal-line;
+  }
+
+  &--trailer {
+
+    &-iframe {
+      border-radius: 4px 4px 0;
+    }
+  }
+
+  &--brief {
+    background-color: $color-info;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    p {
+      font-size: 1.2rem;
+      display: inline-block;
+      padding-right: 3%;
+
+      span {
+        font-size: 1rem;
+      }
+
+      &:last-of-type {
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+.film-description {
+
+  .horizontal-line {
+    @extend %horizontal-line;
+  }
+
+  &--article {
+    background-color: $color-info;
+  }
+}
+
+.film-comments {
+
+  .horizontal-line {
+    @extend %horizontal-line;
+  }
+
+  &--commentator span {
+    font-size: 1rem;
+    letter-spacing: 0.01rem;
+  }
+}
+
+.film-leave-a-comment {
+
+  .horizontal-line {
+    @extend %horizontal-line;
+  }
+
+  &--form button {
+    float: right;
+  }
+}

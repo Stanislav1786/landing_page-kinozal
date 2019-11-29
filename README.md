@@ -1,2 +1,2 @@
-# landing_page-kinozal
-кинозал
+Учебный проект по курсу Front-End
+

@@ -1,0 +1,93 @@
+.navbar-inverse {
+  background-color: darken($color-dark, 4%);
+  border-color: transparent;
+}
+
+.navbar-inverse .navbar-nav>.active>a {
+  background-color: saturate(darken($color-main, 14%), 15%);
+
+  &:hover,
+  &:focus {
+    background-color: desaturate(lighten($color-main, 15%), 40%);
+  }
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  transition: background-color 0.5s;
+  
+  @include sm-min {
+    border-radius: 4px;
+  }
+  @include sm {
+    text-align: center;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $color-main;
+  }
+}
+
+.navbar-header {
+  text-align: center;
+}
+
+.navbar-toggle {
+  float: none;
+  margin-right: 0;
+}
+
+.navbar-left {
+  @include sm {
+    margin-bottom: 0;
+  }
+
+  li {
+    @include sm-min {
+      margin: 5px 5px 5px 0;
+    }
+  }
+}
+
+.navbar-right {
+  @include sm {
+    margin-top: 0;
+  }
+
+  li {
+    @include sm-min {
+      margin: 5px 0 5px 5px;
+    }
+  }
+}
+
+.panel {
+  margin-bottom: $gap * 2;
+  border: none;
+  background-color: lighten($color-gray, 8%);
+
+  &-default {
+    > .panel-heading {
+      color: $color-light;
+      background-color: $color-accent;
+      border: none;
+    }
+  }
+
+  &-title {
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+  }
+
+  &-body {
+    border-radius: 4px;
+    border: 1px solid $color-gray;
+  }
+}
+
+.input {
+  &-lg,
+  &-group-lg > .form-control {
+    font-size: 0.875rem;
+  }
+}

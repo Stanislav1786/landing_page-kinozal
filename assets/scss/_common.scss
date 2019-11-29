@@ -1,0 +1,96 @@
+html {
+  font-size: $font-size;
+  overflow-y: scroll;
+}
+
+body {
+  font-family: $font-main;
+  font-size: 1rem;
+}
+
+a {
+  color: $color-main;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $color-accent;
+  }
+}
+
+h1 {
+  margin: -0.5px 0 ($gap * 3);
+  font-family: $font-header;
+  line-height: 0.7;
+
+  @include xs-min {
+    font-size: 3rem;
+  }
+  @include xs {
+    font-size: 2rem;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    margin-left: $gap;
+    bottom: 47px;
+    background-color: $color-line;
+  }
+}
+
+h2 {
+  margin: ($gap * 4) ($gap * 3) ($gap * 3);
+  font-family: $font-header;
+
+  @include xs-min {
+    font-size: 2.5rem;
+  }
+  @include xs {
+    font-size: 1.75rem;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 3%;
+    height: 3px;
+    margin-left: -40px;
+    top: 68px;
+    background-color: $color-line;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    margin-left: $gap;
+    bottom: 52px;
+    background-color: $color-line;
+  }
+}
+
+h3 {
+  margin-top: 0;
+  letter-spacing: 0.0001rem;
+
+  @include xs-min {
+    font-size: 1.5rem;
+  }
+  @include xs {
+    font-size: 1.25rem;
+  }
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+p {
+  line-height: 1.5rem;
+  margin: 0 0 6px;
+}

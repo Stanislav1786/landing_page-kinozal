@@ -1,0 +1,37 @@
+.header {
+  margin-bottom: $gap * 2 + 10px;
+
+  &-logo {
+    padding: 100px 20px;
+    text-align: center;
+    background-image: url(../img/header-bg.jpg);
+    background-position: 50% 50%;
+    background-size: cover;
+
+    &__title {
+      display: block;
+      color: $color-accent;
+      font-family: $font-header;
+
+      @extend %text-shadow;
+
+      @include xs-min {
+        letter-spacing: 0.33em;
+        font-size: 3.5rem;
+      }
+      @include xs {
+        letter-spacing: 0.2em;
+        font-size: 2.5rem;
+      }
+    }
+
+    &__description {
+      display: block;
+      color: $color-light;
+      letter-spacing: 0.2em;
+      font-size: 1.15rem;
+
+      @extend %text-shadow;
+    }
+  }
+}

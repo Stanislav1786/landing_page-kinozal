@@ -1,0 +1,8 @@
+%text-shadow {
+  text-shadow: 0 0 5px darken($color-dark, 14%), 0 0 20px darken($color-dark, 14%);
+}
+
+%horizontal-line {
+  position: relative;
+  overflow: hidden;
+}

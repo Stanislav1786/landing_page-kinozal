@@ -1,0 +1,38 @@
+.footer {
+  padding-top: $gap * 3;
+  background-color: $color-footer;
+
+  &-menu {
+
+    h4 {
+      color: $color-light;
+    }
+
+    ul {
+      padding-left: 0;
+    }
+
+    &__item {
+
+      list-style: none;
+      &-link {
+        color: $color-date;
+
+        &:hover,
+        &:focus {
+          color: $color-light;
+        }
+      }
+    }
+  }
+
+  &-author {
+    margin: 20px 0;
+    text-align: center;
+
+    a {
+      font-weight: bold;
+      color: $color-light;
+    }
+  }
+}
